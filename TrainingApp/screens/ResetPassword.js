@@ -80,7 +80,7 @@ const ResetPassword = props => {
               alignItems: 'center',
             }}>
             <Image
-              source={images.personIcon}
+              source={images.keyIcon}
               style={{
                 width: 25,
                 height: 25,
@@ -97,7 +97,7 @@ const ResetPassword = props => {
                   '' : 'Email not in correct format') 
                 setEmail(text);
               }}
-              placeholder="Username"
+              placeholder="Password"
               placeholderTextColor={colors.placeholder}
             />
           </View>
@@ -125,12 +125,12 @@ const ResetPassword = props => {
                   '' : 'Password must be at least 3 characters') 
                 setPassword(text);
               }}
-              placeholder="Password"
+              placeholder="Re-enter Password"
               placeholderTextColor={colors.placeholder}
             />
           </View>
           
-          <TouchableOpacity /* forget password */
+          <View /* forget password */
             onPress={() => {
               alert('Enter forget password Screen');
             }}
@@ -148,9 +148,9 @@ const ResetPassword = props => {
                 fontWeight: 'bold',
                 color: 'blue',
               }}>
-              Forget Password?
+              
             </Text>
-          </TouchableOpacity>
+          </View>
 
           <TouchableOpacity
             onPress={() => {
@@ -177,27 +177,6 @@ const ResetPassword = props => {
             </Text>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            onPress={() => {
-              alert('Enter Registration Screen');
-            }}
-            style={{
-              marginHorizontal: 55,
-              marginBottom: 5,
-              backgroundColor: null,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Text
-              style={{
-                padding: 11,
-                fontSize: fontSizes.h4,
-                fontWeight: 'bold',
-                color: 'orange',
-              }}>
-              Don't have a Account? Register
-            </Text>
-          </TouchableOpacity>
         </View>
       </View>
 
