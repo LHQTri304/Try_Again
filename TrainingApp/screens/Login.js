@@ -84,6 +84,8 @@ const Login = props => {
               style={{
                 width: 25,
                 height: 25,
+                marginRight: 10,
+                marginLeft: 10
               }}
             />
             <TextInput
@@ -117,6 +119,8 @@ const Login = props => {
               style={{
                 width: 25,
                 height: 25,
+                marginRight: 10,
+                marginLeft: 10
               }}
             />
             <TextInput

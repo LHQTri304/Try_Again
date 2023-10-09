@@ -14,4 +14,4 @@ import {Welcome,
     ResetPassword,
 } from './screens'
 
-AppRegistry.registerComponent(appName, () => ResetPassword)
+AppRegistry.registerComponent(appName, () => Login)
